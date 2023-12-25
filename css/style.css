@@ -714,3 +714,9 @@ main {
 .form-subscribe-icon {
   fill: #ffffff;
 }
+.comment-form {
+  width: 100%;
+  resize: vertical;
+
+  min-height: 120px;
+}
