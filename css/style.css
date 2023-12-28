@@ -722,7 +722,7 @@ main {
 }
 
 /* Customer checkbox */
-.checkbox-wrapper {
+.form-agreement {
   display: block;
   margin-bottom: 24px;
   margin-top: 16px;
@@ -732,7 +732,8 @@ main {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-
+.checkbox {
+}
 .form-agreement-checkbox {
   display: inline-flex;
   align-items: center;
