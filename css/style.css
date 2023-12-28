@@ -647,7 +647,7 @@ main {
 }
 
 .form-wraper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .form-label {
@@ -694,7 +694,9 @@ main {
 .form-input:focus + .form-icon {
   fill: #4d5ae5;
 }
-
+.form-wraper-textarea {
+  margin-bottom: 16px;
+}
 .comment-form {
   width: 100%;
   height: 120px;
@@ -727,12 +729,10 @@ main {
 
   color: #8e8f99;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
-.form-agreemnet {
-}
 .form-agreement-checkbox {
   display: inline-flex;
   align-items: center;
@@ -810,7 +810,7 @@ main {
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 
   display: flex;
   margin-bottom: 16px;
