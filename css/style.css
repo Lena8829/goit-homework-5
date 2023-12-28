@@ -735,7 +735,7 @@ main {
 .checkbox-wrapper {
   margin-bottom: 24px;
 }
-.form-agreement-checkbox {
+.form-agreement-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
