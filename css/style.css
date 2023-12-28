@@ -732,7 +732,8 @@ main {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-.checkbox {
+.checkbox-wrapper {
+  margin-bottom: 24px;
 }
 .form-agreement-checkbox {
   display: inline-flex;
