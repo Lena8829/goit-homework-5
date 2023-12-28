@@ -592,31 +592,32 @@
           </div>
         </div>
 
-        <div>
-          <label for="user-comment">Comment</label>
+        <div class="form-wraper-textarea">
+          <label for="user-comment" class="form-label">Comment</label>
 
-          <textarea class="comment-form" name="user-comment" id="user-comment" rows="10"></textarea>
+          <textarea class="comment-form" name="user-comment" id="user-comment" placeholder="Text input"
+            rows="7"></textarea>
 
         </div>
 
+        <label class="form-agreement">
+
+          <input class="checkbox visually-hidden" type="checkbox" name="user-agreement" value="false">
+
+          <span class="form-agreement-checkbox">
+            <svg class="form-agreement-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </span>
+
+          I accept the terms and conditions of the <a class="form-agreement-link" href="">Privacy Policy</a>
+
+        </label>
+
+        <button class="form-button" type="submit">Send</button>
+
       </form>
     </div>
-
-
-    <div class="field">
-
-      <Label for="phone">Phone</Label>
-      <input id="phone" type="tel" name="phone" minlength="10" required>
-
-    </div>
-
-    <div class="field">
-
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email">
-
-    </div>
-
 
 
     </form>
