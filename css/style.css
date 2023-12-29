@@ -758,11 +758,6 @@ main {
 
 .checkbox:checked + .form-agreement-box > .form-agreement-icon {
   opacity: 1;
-  background-color: #404bbf;
-
-  fill: #f4f4fd;
-  border-radius: 2px;
-  border: none;
 }
 
 .form-agreement-icon {
