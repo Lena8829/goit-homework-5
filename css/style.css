@@ -752,7 +752,7 @@ input[type='checkbox']:checked + .form-agreement-box {
   background-color: #404bbf;
 
   fill: #f4f4fd;
-  border-radius: 2px;
+
   border: none;
 }
 
