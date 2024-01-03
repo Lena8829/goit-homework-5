@@ -447,12 +447,37 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
-  row-gap: 48px;
+
+  gap: 48px;
+  /* gap: 24px;
+  row-gap: 48px; */
 }
-.portf-img {
-  display: block;
+
+.portf-list-item {
+  border-bottom: 1px solid #e7e9fc;
+  width: calc((100% - 24px) / 1);
+  width: 100%;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .portf-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portf-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.portf-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -488,15 +513,8 @@ main {
 
   overflow: hidden;
 }
-.portf-list-item {
-  border-bottom: 1px solid #e7e9fc;
-  width: calc((100% - 48px) / 3);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portf-list-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portf-img {
+  display: block;
 }
 
 .portf-card-content {
