@@ -92,10 +92,19 @@ main {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  text-align: center;
 
   margin-bottom: 72px;
 }
+
+@media only screen and (min-width: 1158px) {
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+
 /* H 3 */
 .subtitle {
   color: #2e2f42;
@@ -111,9 +120,15 @@ main {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 1158px) {
+  .text {
+    font-weight: 400;
+  }
 }
 
 .visually-hidden {
@@ -297,15 +312,39 @@ main {
 
 /*Feature Section  */
 .features {
-  padding: 120px 0;
+  padding: 96px 16px;
 }
 .features-list {
+  /* Mobile */
   display: flex;
-  gap: 24px;
+  gap: 72px;
   justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
 }
+
 .features-list-item {
-  width: 264px;
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-list-item {
+    width: 356px;
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list-item {
+    width: 264px;
+    width: calc((100% - 72px) / 5);
+  }
 }
 
 .features-wrapper {
@@ -313,8 +352,8 @@ main {
   border: 1px solid #8e8f99;
   background: #f4f4fd;
 
-  width: 264px;
-  height: 112px;
+  width: 288px;
+  height: 120px;
   flex-shrink: 0;
 
   display: flex;
@@ -322,19 +361,40 @@ main {
   align-items: center;
 
   margin-bottom: 8px;
+
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-wrapper {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-wrapper {
+    width: 264px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features-icon {
 }
 
-.feature-title {
+.feature-subtitle,
+.text {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
-.subtitle {
-  margin-bottom: 8px;
+@media only screen and (min-width: 768px) {
+  .feature-subtitle {
+    display: block;
+  }
 }
 
 /* Team Section */
@@ -347,6 +407,7 @@ main {
 .team-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   gap: 72px;
 
@@ -437,6 +498,9 @@ main {
   background-color: #fff;
   align-items: center;
   padding-top: 120px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portf-title {
@@ -447,8 +511,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
   gap: 48px;
+
   /* gap: 24px;
   row-gap: 48px; */
 }
